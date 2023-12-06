@@ -3,7 +3,7 @@ name: test_api_workflow_to_ec2
 on:
   push:
     branches:
-      - master
+      - development
 jobs:
   build:
     runs-on: ubuntu-18.04
