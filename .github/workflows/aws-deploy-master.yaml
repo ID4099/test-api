@@ -8,6 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - name: Echo the message
-        run: |
-          echo "Hello Andrew"
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+        name: install dependencies
+          run: npm install --no-audit --no-fund --no-optional
