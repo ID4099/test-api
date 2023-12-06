@@ -1,0 +1,12 @@
+name: test_api_workflow_to_ec2
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Echo the message
+        run: echo "Hello Andrew"
