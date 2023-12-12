@@ -3,11 +3,11 @@ name: test_api_workflow_to_ec2
 on:
   push:
     branches:
-      - development
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
